@@ -1,0 +1,117 @@
+/* Luxury Green Theme */
+:root {
+    --primary-green: #1b4332; /* Deep Forest Green */
+    --accent-gold: #d4af37;   /* Metallic Gold */
+    --light-cream: #f8f9fa;
+    --soft-white: #ffffff;
+    --text-dark: #2d2d2d;
+    --border-color: #e0e0e0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-cream);
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styling for the content */
+h2 {
+    color: var(--primary-green);
+    border-bottom: 2px solid var(--accent-gold);
+    padding-bottom: 10px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Links & Buttons */
+a {
+    text-decoration: none;
+    color: var(--primary-green);
+    font-weight: bold;
+}
+
+button, .button {
+    background-color: var(--primary-green);
+    color: white;
+    border: 1px solid var(--accent-gold);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+button:hover {
+    background-color: var(--accent-gold);
+    color: var(--primary-green);
+}
+
+button a {
+    color: white;
+}
+
+/* Forms */
+form {
+    background: var(--soft-white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    max-width: 500px;
+    border-left: 5px solid var(--primary-green);
+}
+
+input[type="text"], 
+input[type="number"], 
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Navigation List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: var(--soft-white);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s;
+}
+
+ul li:hover {
+    transform: translateX(10px);
+    border-color: var(--accent-gold);
+}
+
+/* Lists and Leaderboards */
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--accent-gold);
+    margin: 40px 0;
+}
+
+b {
+    color: var(--primary-green);
+    font-size: 1.1rem;
+}
+
+/* Tables/Rows effect */
+.team-row {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
